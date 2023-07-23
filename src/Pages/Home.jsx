@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    Card,
+     Card,
     CardHeader,
     CardBody,
     Typography,
@@ -13,17 +13,15 @@ import {
     ArrowLongLeftIcon,
 } from '@heroicons/react/24/solid'
 import emailjs from 'emailjs-com';
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import { useState } from 'react';
 
 const Home = () => {
-
     const [name, setName] = useState("");
     const [num, setNum] = useState("");
     const [mail, setMail] = useState("");
     const [objet, setObjet] = useState("");
     const [message, setMessage] = useState("");
-
     const handleSendEmail = (event) => {
         const templateParams = {
             name: name, // Votre nom
@@ -79,7 +77,7 @@ const Home = () => {
                     <div className="container mx-auto mt-10 containers">
                         <Card
                             className="w-72 h-72 bg-gray-100 transform-gpu perspective tax"
-                            hoverClassName="hover:rotate-none" >
+                            hoverclassname="hover:rotate-none" >
                         </Card>
                     </div>
                 </div>
@@ -97,7 +95,7 @@ const Home = () => {
                     <div className="mt-10 flex flex-wrap items-center">
                         <div className="mx-auto mt-8 w-full px-4 md:w-5/12">
                             <Card className="flex-row w-full max-w-[48rem]">
-                                <CardHeader shadow={false} floated={false} className="w-2/5 shrink-0 m-0 rounded-r-none">
+                                <CardHeader shadow={false}  className="w-2/5 shrink-0 m-0 rounded-r-none">
                                     <img
                                         src="https://img.freepik.com/photos-gratuite/concept-web-technologie-avancee-programmation-html_53876-124133.jpg?size=626&ext=jpg&uid=R91141572&ga=GA1.2.233797558.1674755311&semt=ais"
                                         alt="image"
@@ -161,7 +159,7 @@ const Home = () => {
                         </div>
                         <div className="mx-auto mt-8 w-full px-4 md:w-5/12">
                             <Card className="flex-row w-full max-w-[48rem]">
-                                <CardHeader shadow={false} floated={false} className="w-2/5 shrink-0 m-0 rounded-r-none">
+                                <CardHeader shadow={false}  className="w-2/5 shrink-0 m-0 rounded-r-none">
                                     <img
                                         src="https://img.freepik.com/vecteurs-libre/illustration-concept-abstrait-conception-video_335657-3820.jpg?size=626&ext=jpg&uid=R91141572&ga=GA1.1.233797558.1674755311&semt=sph"
                                         alt="image"
@@ -188,7 +186,7 @@ const Home = () => {
                     <div className="mt-32 flex flex-wrap items-center">
                         <div className="mx-auto mt-8 w-full px-4 md:w-5/12">
                             <Card className="flex-row w-full max-w-[48rem]">
-                                <CardHeader shadow={false} floated={false} className="w-2/5 shrink-0 m-0 rounded-r-none">
+                                <CardHeader shadow={false}  className="w-2/5 shrink-0 m-0 rounded-r-none">
                                     <img
                                         src="https://img.freepik.com/photos-gratuite/collage-creatif-marketing-telephone_23-2149379900.jpg?size=626&ext=jpg"
                                         alt="image"
@@ -241,7 +239,7 @@ const Home = () => {
                         </div>
                         <div className="mx-auto mt-8 w-full px-4 md:w-5/12">
                             <Card className="flex-row w-full max-w-[48rem]">
-                                <CardHeader shadow={false} floated={false} className="w-2/5 shrink-0 m-0 rounded-r-none">
+                                <CardHeader shadow={false}  className="w-2/5 shrink-0 m-0 rounded-r-none">
                                     <img
                                         src="https://img.freepik.com/photos-gratuite/ingenieur-miniature-travailleurs-travaillant-cable-lan_1252-818.jpg?size=626&ext=jpg"
                                         alt="image"
@@ -279,7 +277,7 @@ const Home = () => {
                     </div>
                     <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-3">
                         <Card className="w-30 profil">
-                            <div floated={false} className="h-50">
+                            <div  className="h-50">
                                 <img src="/public/img/Tsiory.jpg" alt="profile-picture" className='equi my-4' style={{ height: "25vh", borderRadius: "15%" }} />
                             </div>
                             <CardBody className="text-center">
@@ -292,7 +290,7 @@ const Home = () => {
                             </CardBody>
                         </Card>
                         <Card className="w-30 profil">
-                            <div floated={false} className="h-50">
+                            <div  className="h-50">
                                 <img src="/public/img/inno.jpg" alt="profile-picture" className='equi' style={{ height: "25vh", borderRadius: "15%" }} />
                             </div>
                             <CardBody className="text-center">
@@ -305,7 +303,7 @@ const Home = () => {
                             </CardBody>
                         </Card>
                         <Card className="w-30 profil">
-                            <div floated={false} className="h-50">
+                            <div  className="h-50">
                                 <img src="/public/img/Marius.jpg" alt="profile-picture" className='equi' style={{ height: "25vh", borderRadius: "15%" }} />
                             </div>
                             <CardBody className="text-center">
@@ -318,7 +316,7 @@ const Home = () => {
                             </CardBody>
                         </Card>
                         <Card className="w-30 profil">
-                            <div floated={false} className="h-50">
+                            <div  className="h-50">
                                 <img src="/public/img/Butin.jpg" alt="profile-picture" className='equi' style={{ height: "25vh", borderRadius: "15%" }} />
                             </div>
                             <CardBody className="text-center">
@@ -331,7 +329,7 @@ const Home = () => {
                             </CardBody>
                         </Card>
                         <Card className="w-30 profil">
-                            <div floated={false} className="h-50">
+                            <div  className="h-50">
                                 <img src="/public/img/Mario.jpg" alt="profile-picture" className='equi' style={{ height: "25vh", borderRadius: "15%" }} />
                             </div>
                             <CardBody className="text-center">
@@ -344,7 +342,7 @@ const Home = () => {
                             </CardBody>
                         </Card>
                         <Card className="w-30 profil">
-                            <div floated={false} className="h-50">
+                            <div  className="h-50">
                                 <img src="/public/img/Sitraka.jpg" alt="profile-picture" className='equi' style={{ height: "25vh", borderRadius: "15%" }} />
                             </div>
                             <CardBody className="text-center">
@@ -444,8 +442,8 @@ const Home = () => {
                             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-5/12">
                                 <Card className=" gap-4 info overflow-y-auto map" style={{ height: "410px", width: "600px", boxShadow: "0 0 10px #10D9E0" }}>
                                     <div className="mapouter">
-                                        <div className="gmap_canvas"><iframe className="gmap_iframe" width="100%" frameborder="0" scrolling="no"
-                                            marginheight="0" marginwidth="0"
+                                        <div className="gmap_canvas"><iframe className="gmap_iframe" width="100%" frameBorder="0" scrolling="no"
+                                            marginHeight="0" marginWidth="0"
                                             src="https://maps.google.com/maps?width=650&amp;height=410&amp;hl=en&amp;q=saveur foie gras ambatomaro&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
                                                 href="https://connectionsgame.org/">Connections Game</a></div>
                                     </div>
